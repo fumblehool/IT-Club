@@ -30,7 +30,7 @@
 
 <body>
 <br>
-<div class="well lead" style="color:#0000FF;"><h1>Welcome <?php echo $username ?> !!! </h1></div>
+<div class="well lead" style="color:#0000FF;"><h1>Welcome <?php echo $username ?></h1></div>
 
 <br><br><br><br>
 <center>
