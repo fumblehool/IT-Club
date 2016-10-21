@@ -26,7 +26,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url(); ?>ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>ico/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="<?php echo base_url(); ?>ico/favicon.png">
-  <script>          
+  <script>
   function validateForm() {
     var a = document.forms["registration"]["name"].value;
     var b = document.forms["registration"]["password"].value;
@@ -46,7 +46,7 @@
             alert("fields marked mandatory must be filled out");
             return false; }
           }
-          
+
 
           </script>
         </head>
@@ -79,8 +79,8 @@
             <div class="well">
              <form name=registration method=POST onsubmit="return validateForm()" action="<?php echo base_url();?>/index.php/joinus_c/insert" >
               <table cellspacing="5" cellpadding="5">
-                <tr>  
-                  <td><sup>*</sup>Name:</td> <td><input type=text name=name value="" id="name"></td> 
+                <tr>
+                  <td><sup>*</sup>Name:</td> <td><input type=text name=name value="" id="name"></td>
                 </tr>
                 <tr>
                   <td><sup>*</sup>password:</td>  <td><input type=password name="password"></td>
@@ -89,44 +89,44 @@
                   <td><sup>*</sup>D.O.B:</td> <td>
 
                   <select class="span3" name=s1 size="1" id=s1>
-                   <option value=1>1 </option> 
-                   <option value=2>2 </option> 
-                   <option value=3>3 </option> 
-                   <option value=4>4 </option> 
-                   <option value=5>5 </option> 
-                   <option value=6>6 </option> 
-                   <option value=7>7</option> 
-                   <option value=8>8 </option> 
-                   <option value=9>9 </option> 
-                   <option value=10>10 </option> 
-                   <option value=11>11 </option> 
-                   <option value=12>12 </option> 
-                   <option value=13>13 </option> 
-                   <option value=14>14 </option> 
-                   <option value=15>15 </option> 
+                   <option value=1>1 </option>
+                   <option value=2>2 </option>
+                   <option value=3>3 </option>
+                   <option value=4>4 </option>
+                   <option value=5>5 </option>
+                   <option value=6>6 </option>
+                   <option value=7>7</option>
+                   <option value=8>8 </option>
+                   <option value=9>9 </option>
+                   <option value=10>10 </option>
+                   <option value=11>11 </option>
+                   <option value=12>12 </option>
+                   <option value=13>13 </option>
+                   <option value=14>14 </option>
+                   <option value=15>15 </option>
                  </select>:Day
-                 
+               </td><td>
                  <select class="span3" name=s2 size=1 id=s2>
-                  <option value=01>01</option> 
-                  <option value=02>02</option> 
-                  <option value=03>03</option> 
-                  <option value=04>04</option> 
-                  <option value=05>05</option> 
-                  <option value=06>06</option> 
-                  <option value=07>07</option> 
-                  <option value=08>08</option> 
-                  <option value=09>09</option> 
-                  <option value=10>10</option> 
-                  <option value=11>11</option> 
-                  <option value=12>12</option> 
+                  <option value=01>01</option>
+                  <option value=02>02</option>
+                  <option value=03>03</option>
+                  <option value=04>04</option>
+                  <option value=05>05</option>
+                  <option value=06>06</option>
+                  <option value=07>07</option>
+                  <option value=08>08</option>
+                  <option value=09>09</option>
+                  <option value=10>10</option>
+                  <option value=11>11</option>
+                  <option value=12>12</option>
                 </select>:Month
-                
+              </td><td>
                 <select class="span3" name=s3 size=1 id=s3>
-                 <option value=1996>1996 </option> 
-                 <option value=1997>1997 </option> 
-                 <option value=1998>1998 </option> 
-                 <option value=1999>1999 </option> 
-                 <option value=2000>2000 </option> 
+                 <option value=1996>1996 </option>
+                 <option value=1997>1997 </option>
+                 <option value=1998>1998 </option>
+                 <option value=1999>1999 </option>
+                 <option value=2000>2000 </option>
                </select>:Year</td>
              </tr>
              <tr>
@@ -152,7 +152,7 @@
                  <label class="checkbox inline">
                    <input type="checkbox" name="skills[]" value="mysql">Mysql</label>
                  </td>
-               </tr>     
+               </tr>
                <tr>
                  <td><sup>*</sup>E-mail:</td> <td><input type=email name=email>
                  <!-- <div class="input-prepend">
@@ -161,7 +161,7 @@
                  </div> -->
                </td>
              </tr>
-             <tr>    
+             <tr>
                <td><sup>*</sup>Address:</td> <td><textarea rows=3 cols=30 name=address id=adrs1></textarea></td>
              </tr>
            </table><br/><br/>
@@ -170,11 +170,11 @@
             <button type="reset" class="btn">Reset</button>
           </div>
         </div>
-        
 
-        
+
+
       </form>
-    </center>      
+    </center>
 
   </div>
 </body>
