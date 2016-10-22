@@ -51,7 +51,7 @@
           </script>
         </head>
 
-        <body>
+        <body ng-app="">
 
           <!-- navbar -->
           <header class="navbar  navbar-fixed-top navbar-inverse" role="banner">
@@ -76,9 +76,10 @@
 
            <center>
             <strong> please fill out the form below to become a registered member </strong><br/><br/>
+            
             <div class="well">
-             <form name=registration method=POST onsubmit="return validateForm()" action="<?php echo base_url();?>/index.php/joinus_c/insert" >
-              <table cellspacing="5" cellpadding="5">
+             <form align="center" name=registration method=POST onsubmit="return validateForm()" action="<?php echo base_url();?>/index.php/joinus_c/insert" >
+              <table cellspacing="5" cellpadding="5" style="width:70%">
                 <tr>
                   <td><sup>*</sup>Name:</td> <td><input type=text name=name value="" id="name"></td>
                 </tr>
@@ -88,7 +89,7 @@
                 <tr>
                   <td><sup>*</sup>D.O.B:</td> <td>
 
-                  <select class="span3" name=s1 size="1" id=s1>
+                  <select class="span3" name=s1 size="1" id="s1">
                    <option value=1>1 </option>
                    <option value=2>2 </option>
                    <option value=3>3 </option>
@@ -105,8 +106,8 @@
                    <option value=14>14 </option>
                    <option value=15>15 </option>
                  </select>:Day
-               </td><td>
-                 <select class="span3" name=s2 size=1 id=s2>
+
+                 <select class="span3" name=s2 size=1 id="s2">
                   <option value=01>01</option>
                   <option value=02>02</option>
                   <option value=03>03</option>
@@ -120,8 +121,8 @@
                   <option value=11>11</option>
                   <option value=12>12</option>
                 </select>:Month
-              </td><td>
-                <select class="span3" name=s3 size=1 id=s3>
+
+                <select class="span3" name=s3 size=1 id="s3">
                  <option value=1996>1996 </option>
                  <option value=1997>1997 </option>
                  <option value=1998>1998 </option>
@@ -154,12 +155,7 @@
                  </td>
                </tr>
                <tr>
-                 <td><sup>*</sup>E-mail:</td> <td><input type=email name=email>
-                 <!-- <div class="input-prepend">
-                   <span class="add-on">@</span>
-                   <input class="span2" name=@ id="prependedInput" type="text" placeholder=" ">
-                 </div> -->
-               </td>
+                 <td><sup>*</sup>E-mail:</td> <td><input type=email name=email ng-model="text"></td>
              </tr>
              <tr>
                <td><sup>*</sup>Address:</td> <td><textarea rows=3 cols=30 name=address id=adrs1></textarea></td>
