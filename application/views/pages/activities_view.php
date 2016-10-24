@@ -33,8 +33,8 @@
   <!-- navbar -->
     <header class="navbar  navbar-fixed-top navbar-inverse" role="banner">
       <div class="navbar-inner">
-        <a class="brand" href="<?php echo base_url(); ?>/index.php/home_c" style="color:white">IT CLUB</a>
-        <ul class="nav pull-right">
+        <a class="brand" href="<?php echo base_url(); ?>/index.php/home_c" style="color:white; margin-left:0.1%;">IT CLUB</a>
+        <ul class="nav pull-right" style="margin-right:1%;">
           <li ><a href="<?php echo base_url(); ?>/index.php/home_c">Home</a></li>
           <li><a href="<?php echo base_url(); ?>/index.php/aboutclub_c">About Club</a></li>
           <li class="active"><a href="<?php echo base_url(); ?>/index.php/activities_c">Activities</a></li>
