@@ -148,11 +148,11 @@
              <tr>
                <td><sup>*</sup>Sex:</td> <td>
                <label class="radio inline" name=sex>
-                 <input type="radio" name="optionsRadios[]" id="optionsRadios1" value="male">
+                 <input type="radio" name="optionsRadios" id="optionsRadios1" value="male">
                  Male
                </label>
                <label class="radio inline">
-                <input type="radio" name="optionsRadios[]" id="optionsRadios2" value="female">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="female">
                 Female
               </label>
             </td>
