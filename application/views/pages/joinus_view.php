@@ -27,6 +27,19 @@
   <link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>ico/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="<?php echo base_url(); ?>ico/favicon.png">
   <script>
+  bootstrap_alert = function()
+                    {}
+  bootstrap_alert.warning = function( message )
+                            {
+                               $('#alert_placeholder').html(' <div id="alertdiv" style="line-height:50px" class="alert-error"><a class="close" data-dismiss="alert">&times</a><span class="lead">'+message+'</span></div>')
+                               // setTimeout( 
+                               //             function()
+                               //             { $("#alertdiv").remove(); } , 4000
+                               //           );
+                               $("#alertdiv").fadeOut(7000);
+                            }
+
+
   function validateForm() {
     var a = document.forms["registration"]["name"].value;
     var b = document.forms["registration"]["password"].value;
@@ -34,16 +47,16 @@
     var d = document.forms["registration"]["email"].value;
 
     if (a == null || a == "") {
-      alert("fields marked mandatory must be filled out");
+      bootstrap_alert.warning('fields marked mandatory must be filled out');
       return false;}
       if (b == null || b == "") {
-        alert("fields marked mandatory must be filled out");
+         bootstrap_alert.warning('fields marked mandatory must be filled out');
         return false; }
         if (c == null || c == "") {
-          alert("fields marked mandatory must be filled out");
+           bootstrap_alert.warning('fields marked mandatory must be filled out');
           return false; }
           if (d == null || d == "") {
-            alert("fields marked mandatory must be filled out");
+             bootstrap_alert.warning('fields marked mandatory must be filled out');
             return false; }
           }
 
@@ -76,7 +89,9 @@
 
            <center>
             <strong> please fill out the form below to become a registered member </strong><br/><br/>
-            
+
+            <div id="alert_placeholder"></div>
+
             <div class="well">
              <form align="center" name=registration method=POST onsubmit="return validateForm()" action="<?php echo base_url();?>/index.php/joinus_c/insert" >
               <table cellspacing="5" cellpadding="5" style="width:70%">
